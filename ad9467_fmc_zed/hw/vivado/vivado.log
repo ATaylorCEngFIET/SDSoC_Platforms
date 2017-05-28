@@ -1,0 +1,469 @@
+#-----------------------------------------------------------
+# Vivado v2016.3_sdx (64-bit)
+# SW Build 1721784 on Tue Nov 29 22:12:44 MST 2016
+# IP Build 1720686 on Mon Nov 28 12:39:17 MST 2016
+# Start of session at: Sat May 27 16:39:25 2017
+# Process ID: 3764
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6192
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Xilinx/SDx/2016.3/Vivado/scripts/init.tcl'
+176 Beta devices matching pattern found, 24 enabled.
+16 Beta devices matching pattern found, 0 enabled.
+Loaded SDSoC Platform Tcl Library
+start_gui
+open_project C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/iprepo/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/SDx/2016.3/data/ip/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/SDx/2016.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_spdif_tx_core_0
+system_sys_i2c_mixer_0
+system_axi_hdmi_clkgen_0
+system_axi_hdmi_core_0
+system_axi_ad9467_0
+system_axi_i2s_adi_0
+system_axi_ad9467_dma_0
+
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1100.684 ; gain = 393.199
+open_bd_design {C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: I2S 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: I2S 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: I2S 
+Adding cell -- analog.com:user:axi_ad9467:1.0 - axi_ad9467
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9467_dma
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: fifo_wr 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: fifo_wr 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: fifo_wr 
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: analog.com:interface:i2s_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'analog.com:interface:i2s_rtl:1.0', cannot be found. Interface port: 'i2s' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: analog.com:interface:i2s_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'analog.com:interface:i2s_rtl:1.0', cannot be found. Interface port: 'i2s' cannot be created
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK0(clk) and /axi_hdmi_core/vdma_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_ad9467/delay_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_ad9467/adc_clk(undef) and /axi_ad9467_dma/fifo_wr_clk(clk)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.125 ; gain = 16.145
+close_bd_design [get_bd_designs system]
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/Downloads/hdl-hdl_2016_r2/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1164.352 ; gain = 0.000
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+Adding cell -- analog.com:user:axi_ad9467:1.0 - axi_ad9467
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9467_dma
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK0(clk) and /axi_hdmi_core/vdma_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_ad9467/delay_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_ad9467/adc_clk(undef) and /axi_ad9467_dma/fifo_wr_clk(clk)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1210.617 ; gain = 46.266
+delete_bd_objs [get_bd_nets ps_intr_00_1]
+delete_bd_objs [get_bd_nets ps_intr_01_1]
+delete_bd_objs [get_bd_nets ps_intr_02_1]
+delete_bd_objs [get_bd_nets ps_intr_03_1]
+delete_bd_objs [get_bd_nets ps_intr_04_1]
+delete_bd_objs [get_bd_nets ps_intr_05_1]
+delete_bd_objs [get_bd_nets ps_intr_06_1]
+delete_bd_objs [get_bd_nets ps_intr_07_1]
+delete_bd_objs [get_bd_nets ps_intr_08_1]
+delete_bd_objs [get_bd_nets ps_intr_09_1]
+delete_bd_objs [get_bd_nets ps_intr_10_1]
+delete_bd_objs [get_bd_nets ps_intr_12_1]
+connect_bd_net [get_bd_pins sys_concat_intc/In0] [get_bd_pins axi_iic_fmc/iic2intc_irpt]
+disconnect_bd_net /axi_iic_fmc_iic2intc_irpt [get_bd_pins sys_concat_intc/In11]
+startgroup
+connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins sys_concat_intc/In5]
+connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins sys_concat_intc/In11]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins sys_concat_intc/In11]'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins sys_concat_intc/In5]'
+INFO: [Common 17-17] undo 'startgroup'
+connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins axi_ad9467_dma/irq]
+disconnect_bd_net /axi_ad9467_dma_irq [get_bd_pins sys_concat_intc/In13]
+startgroup
+connect_bd_net [get_bd_pins sys_concat_intc/In2] [get_bd_pins axi_iic_main/iic2intc_irpt]
+connect_bd_net [get_bd_pins axi_iic_main/iic2intc_irpt] [get_bd_pins sys_concat_intc/In13]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_iic_main/iic2intc_irpt] [get_bd_pins sys_concat_intc/In13]'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins sys_concat_intc/In2] [get_bd_pins axi_iic_main/iic2intc_irpt]'
+INFO: [Common 17-17] undo 'startgroup'
+connect_bd_net [get_bd_pins sys_concat_intc/In2] [get_bd_pins axi_iic_main/iic2intc_irpt]
+disconnect_bd_net /axi_iic_main_iic2intc_irpt [get_bd_pins sys_concat_intc/In14]
+connect_bd_net [get_bd_pins sys_concat_intc/In3] [get_bd_pins axi_hdmi_dma/mm2s_introut]
+disconnect_bd_net /axi_hdmi_dma_mm2s_introut [get_bd_pins sys_concat_intc/In15]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells sys_concat_intc]
+endgroup
+save_bd_design
+Wrote  : <C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd> 
+copy_bd_objs /  [get_bd_cells {sys_rstgen}]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property location {5.5 2901 1711} [get_bd_cells sys_rstgen1]
+copy_bd_objs /  [get_bd_cells {sys_rstgen}]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property location {6 2905 1864} [get_bd_cells sys_rstgen2]
+copy_bd_objs /  [get_bd_cells {sys_rstgen}]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property location {6 2973 1970} [get_bd_cells sys_rstgen3]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {75} CONFIG.PCW_EN_CLK2_PORT {1} CONFIG.PCW_EN_CLK3_PORT {1} CONFIG.PCW_EN_RST2_PORT {1} CONFIG.PCW_EN_RST3_PORT {1}] [get_bd_cells sys_ps7]
+endgroup
+connect_bd_net [get_bd_pins sys_ps7/FCLK_CLK1] [get_bd_pins sys_rstgen1/slowest_sync_clk]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_CLK2] [get_bd_pins sys_rstgen2/slowest_sync_clk]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_CLK3] [get_bd_pins sys_rstgen3/slowest_sync_clk]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_RESET1_N] [get_bd_pins sys_rstgen1/ext_reset_in]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_RESET2_N] [get_bd_pins sys_rstgen2/ext_reset_in]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_RESET3_N] [get_bd_pins sys_rstgen3/ext_reset_in]
+save_bd_design
+Wrote  : <C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+close_project
+****** Webtalk v2016.3_sdx (64-bit)
+  **** SW Build 1721784 on Tue Nov 29 22:12:44 MST 2016
+  **** IP Build 1720686 on Mon Nov 28 12:39:17 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Xilinx/SDx/2016.3/Vivado/scripts/init.tcl'
+invalid command name "enable_beta_device*"
+    while executing
+"enable_beta_device*"
+    (file "C:/Xilinx/SDx/2016.3/Vivado/scripts/init.tcl" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sat May 27 16:52:26 2017...
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/Downloads/hdl-hdl_2016_r2/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1300.750 ; gain = 0.000
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+Adding cell -- analog.com:user:axi_ad9467:1.0 - axi_ad9467
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9467_dma
+WARNING: [BD 41-721] Attempt to set value '1' on disabled parameter 'DMA_AXI_PROTOCOL_SRC' of cell '/axi_ad9467_dma' is ignored
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen2
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK0(clk) and /axi_hdmi_core/vdma_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_ad9467/delay_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_ad9467/adc_clk(undef) and /axi_ad9467_dma/fifo_wr_clk(clk)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1336.703 ; gain = 35.953
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs system]
+close_project
+open_project C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/iprepo/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/SDx/2016.3/data/ip/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/SDx/2016.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_spdif_tx_core_0
+system_sys_i2c_mixer_0
+system_axi_hdmi_clkgen_0
+system_axi_hdmi_core_0
+system_axi_ad9467_0
+system_axi_i2s_adi_0
+system_axi_ad9467_dma_0
+
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1638.816 ; gain = 240.180
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: I2S 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: I2S 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: I2S 
+Adding cell -- analog.com:user:axi_ad9467:1.0 - axi_ad9467
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9467_dma
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: fifo_wr 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: fifo_wr 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: fifo_wr 
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen2
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen3
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - dm_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_0/M_AXIS_MM2S. Setting parameter on /dm_0/M_AXIS_MM2S failed
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_0/M_AXIS_CNTRL. Setting parameter on /dm_0/M_AXIS_CNTRL failed
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - dm_1
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_1/M_AXIS_MM2S. Setting parameter on /dm_1/M_AXIS_MM2S failed
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_1/M_AXIS_CNTRL. Setting parameter on /dm_1/M_AXIS_CNTRL failed
+Adding cell -- xilinx.com:hls:mmult_accel:1.0 - mmult_accel_1
+Adding cell -- xilinx.com:ip:adapter_v3_0:1.0 - mmult_accel_1_if
+Adding cell -- xilinx.com:ip:axi_stream_router:1.0 - axis_rtr_dm_0
+Adding cell -- xilinx.com:ip:axi_stream_router:1.0 - axis_rtr_dm_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - acp_axcache_0xE
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - acp_axcache_0x2
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK0(clk) and /axi_hdmi_core/vdma_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_ad9467/delay_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_ad9467/adc_clk(undef) and /axi_ad9467_dma/fifo_wr_clk(clk)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s04_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s04_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s03_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1675.168 ; gain = 36.352
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/Downloads/hdl-hdl_2016_r2/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1675.168 ; gain = 0.000
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/hdl_projects/ad9467_fmc_zed/hw/vivado/library [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/ad9467_fmc_zed/hw/vivado/library'.
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+Adding cell -- analog.com:user:axi_ad9467:1.0 - axi_ad9467
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9467_dma
+WARNING: [BD 41-721] Attempt to set value '1' on disabled parameter 'DMA_AXI_PROTOCOL_SRC' of cell '/axi_ad9467_dma' is ignored
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen2
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK0(clk) and /axi_hdmi_core/vdma_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_ad9467/delay_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_ad9467/adc_clk(undef) and /axi_ad9467_dma/fifo_wr_clk(clk)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1686.645 ; gain = 11.477
+close_project
+open_project C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/iprepo/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/SDx/2016.3/data/ip/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx/SDx/2016.3/data/cache/xilinx'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_axi_spdif_tx_core_0
+system_sys_i2c_mixer_0
+system_axi_hdmi_clkgen_0
+system_axi_hdmi_core_0
+system_axi_ad9467_0
+system_axi_i2s_adi_0
+system_axi_ad9467_dma_0
+
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1961.672 ; gain = 275.027
+open_bd_design {C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+Adding cell -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: I2S 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: I2S 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: I2S 
+Adding cell -- analog.com:user:axi_ad9467:1.0 - axi_ad9467
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9467_dma
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: fifo_wr 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: fifo_wr 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: fifo_wr 
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - sys_audio_clkgen
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen2
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen3
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - dm_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_0/M_AXIS_MM2S. Setting parameter on /dm_0/M_AXIS_MM2S failed
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_0/M_AXIS_CNTRL. Setting parameter on /dm_0/M_AXIS_CNTRL failed
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - dm_1
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_1/M_AXIS_MM2S. Setting parameter on /dm_1/M_AXIS_MM2S failed
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /dm_1/M_AXIS_CNTRL. Setting parameter on /dm_1/M_AXIS_CNTRL failed
+Adding cell -- xilinx.com:hls:mmult_accel:1.0 - mmult_accel_1
+Adding cell -- xilinx.com:ip:adapter_v3_0:1.0 - mmult_accel_1_if
+Adding cell -- xilinx.com:ip:axi_stream_router:1.0 - axis_rtr_dm_0
+Adding cell -- xilinx.com:ip:axi_stream_router:1.0 - axis_rtr_dm_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - acp_axcache_0xE
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - acp_axcache_0x2
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK0(clk) and /axi_hdmi_core/vdma_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /sys_ps7/FCLK_CLK1(clk) and /axi_ad9467/delay_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_ad9467/adc_clk(undef) and /axi_ad9467_dma/fifo_wr_clk(clk)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s04_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s04_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s03_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s03_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s02_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s02_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1982.332 ; gain = 20.660
+report_ip_status -name ip_status 
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/ad9467_fmc_zed/hw/vivado/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1983.754 ; gain = 0.000
+archive_project C:/hdl_projects/ad9467_fmc_zed/hw/ad9467_fmc_zed.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3764-DESKTOP-HQKVQ13 -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3764-DESKTOP-HQKVQ13' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/hdl_projects/ad9467_fmc_zed/hw/vivado/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/SDx/2016.3/Vivado/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3764-DESKTOP-HQKVQ13/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+WARNING: [Coretcl 2-52] File 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3764-DESKTOP-HQKVQ13/PrjAr/_X_/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3764-DESKTOP-HQKVQ13/PrjAr/_X_/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc' does not exist
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

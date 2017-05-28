@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# hsi v2016.3_sdx (64-bit)
+# SW Build 1721784 on Tue Nov 29 22:12:44 MST 2016
+# 
+# Start of session at: Sun May 28 13:35:54 2017
+# Process ID: 17944
+# Current directory: C:/Users/aptay/sdsoc_workspace/ad9467_2/Debug/_sds/swstubs/standalone_bsp
+# Command line: hsi.exe -mode batch -notrace -quiet -source C:/Users/aptay/sdsoc_workspace/ad9467_2/Debug/_sds/swstubs/standalone_bsp/create_bsp_post.tcl
+# Log file: C:/Users/aptay/sdsoc_workspace/ad9467_2/Debug/_sds/swstubs/standalone_bsp/hsi.log
+# Journal file: C:/Users/aptay/sdsoc_workspace/ad9467_2/Debug/_sds/swstubs/standalone_bsp\hsi.jou
+#-----------------------------------------------------------

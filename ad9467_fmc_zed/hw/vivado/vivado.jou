@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2016.3_sdx (64-bit)
+# SW Build 1721784 on Tue Nov 29 22:12:44 MST 2016
+# IP Build 1720686 on Mon Nov 28 12:39:17 MST 2016
+# Start of session at: Sat May 27 16:39:25 2017
+# Process ID: 3764
+# Current directory: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6192
+# Log file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/aptay/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.xpr
+open_bd_design {C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+close_bd_design [get_bd_designs system]
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+delete_bd_objs [get_bd_nets ps_intr_00_1]
+delete_bd_objs [get_bd_nets ps_intr_01_1]
+delete_bd_objs [get_bd_nets ps_intr_02_1]
+delete_bd_objs [get_bd_nets ps_intr_03_1]
+delete_bd_objs [get_bd_nets ps_intr_04_1]
+delete_bd_objs [get_bd_nets ps_intr_05_1]
+delete_bd_objs [get_bd_nets ps_intr_06_1]
+delete_bd_objs [get_bd_nets ps_intr_07_1]
+delete_bd_objs [get_bd_nets ps_intr_08_1]
+delete_bd_objs [get_bd_nets ps_intr_09_1]
+delete_bd_objs [get_bd_nets ps_intr_10_1]
+delete_bd_objs [get_bd_nets ps_intr_12_1]
+connect_bd_net [get_bd_pins sys_concat_intc/In0] [get_bd_pins axi_iic_fmc/iic2intc_irpt]
+disconnect_bd_net /axi_iic_fmc_iic2intc_irpt [get_bd_pins sys_concat_intc/In11]
+startgroup
+connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins sys_concat_intc/In5]
+connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins sys_concat_intc/In11]
+endgroup
+undo
+connect_bd_net [get_bd_pins sys_concat_intc/In1] [get_bd_pins axi_ad9467_dma/irq]
+disconnect_bd_net /axi_ad9467_dma_irq [get_bd_pins sys_concat_intc/In13]
+startgroup
+connect_bd_net [get_bd_pins sys_concat_intc/In2] [get_bd_pins axi_iic_main/iic2intc_irpt]
+connect_bd_net [get_bd_pins axi_iic_main/iic2intc_irpt] [get_bd_pins sys_concat_intc/In13]
+endgroup
+undo
+connect_bd_net [get_bd_pins sys_concat_intc/In2] [get_bd_pins axi_iic_main/iic2intc_irpt]
+disconnect_bd_net /axi_iic_main_iic2intc_irpt [get_bd_pins sys_concat_intc/In14]
+connect_bd_net [get_bd_pins sys_concat_intc/In3] [get_bd_pins axi_hdmi_dma/mm2s_introut]
+disconnect_bd_net /axi_hdmi_dma_mm2s_introut [get_bd_pins sys_concat_intc/In15]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells sys_concat_intc]
+endgroup
+save_bd_design
+copy_bd_objs /  [get_bd_cells {sys_rstgen}]
+set_property location {5.5 2901 1711} [get_bd_cells sys_rstgen1]
+copy_bd_objs /  [get_bd_cells {sys_rstgen}]
+set_property location {6 2905 1864} [get_bd_cells sys_rstgen2]
+copy_bd_objs /  [get_bd_cells {sys_rstgen}]
+set_property location {6 2973 1970} [get_bd_cells sys_rstgen3]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {75} CONFIG.PCW_EN_CLK2_PORT {1} CONFIG.PCW_EN_CLK3_PORT {1} CONFIG.PCW_EN_RST2_PORT {1} CONFIG.PCW_EN_RST3_PORT {1}] [get_bd_cells sys_ps7]
+endgroup
+connect_bd_net [get_bd_pins sys_ps7/FCLK_CLK1] [get_bd_pins sys_rstgen1/slowest_sync_clk]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_CLK2] [get_bd_pins sys_rstgen2/slowest_sync_clk]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_CLK3] [get_bd_pins sys_rstgen3/slowest_sync_clk]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_RESET1_N] [get_bd_pins sys_rstgen1/ext_reset_in]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_RESET2_N] [get_bd_pins sys_rstgen2/ext_reset_in]
+connect_bd_net [get_bd_pins sys_ps7/FCLK_RESET3_N] [get_bd_pins sys_rstgen3/ext_reset_in]
+save_bd_design
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs system]
+close_project
+open_project C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.xpr
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/hdl_projects/ad9467_fmc_zed/hw/vivado/library [current_project]
+update_ip_catalog
+open_bd_design {C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+close_project
+open_project C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.xpr
+open_bd_design {C:/Users/aptay/sdsoc_workspace/ad9467/Debug/_sds/p0/ipi/ad9467_fmc_zed.srcs/sources_1/bd/system/system.bd}
+report_ip_status -name ip_status 
+close_project
+open_project C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.xpr
+archive_project C:/hdl_projects/ad9467_fmc_zed/hw/ad9467_fmc_zed.xpr.zip -temp_dir C:/Users/aptay/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3764-DESKTOP-HQKVQ13 -force -include_config_settings

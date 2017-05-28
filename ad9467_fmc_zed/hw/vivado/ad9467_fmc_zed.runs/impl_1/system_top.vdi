@@ -1,0 +1,1139 @@
+#-----------------------------------------------------------
+# Vivado v2016.3_sdx (64-bit)
+# SW Build 1721784 on Tue Nov 29 22:12:44 MST 2016
+# IP Build 1720686 on Mon Nov 28 12:39:17 MST 2016
+# Start of session at: Sat May 27 16:06:44 2017
+# Process ID: 1680
+# Current directory: C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1
+# Command line: vivado.exe -log system_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
+# Log file: C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top.vdi
+# Journal file: C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Xilinx/SDx/2016.3/Vivado/scripts/init.tcl'
+176 Beta devices matching pattern found, 24 enabled.
+16 Beta devices matching pattern found, 0 enabled.
+Loaded SDSoC Platform Tcl Library
+source system_top.tcl -notrace
+WARNING: [filemgmt 56-128] File 'c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc' is already in the project and will not be added again
+INFO: [Vivado 12-1425] Replacing existing reference 'system_axi_hdmi_core_0' with 'system_axi_ad9467_0' for the XDC constraint: c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 359 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3_sdx
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main/U0'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main/U0'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen/U0'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1022.336 ; gain = 493.016
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc/U0'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc/U0'
+Parsing XDC File [C:/Users/aptay/Downloads/hdl-hdl_2016_r2/projects/common/xilinx/compression_system_constr.xdc]
+Finished Parsing XDC File [C:/Users/aptay/Downloads/hdl-hdl_2016_r2/projects/common/xilinx/compression_system_constr.xdc]
+Parsing XDC File [C:/Users/aptay/Downloads/hdl-hdl_2016_r2/projects/ad9467_fmc/zed/system_constr.xdc]
+Finished Parsing XDC File [C:/Users/aptay/Downloads/hdl-hdl_2016_r2/projects/ad9467_fmc/zed/system_constr.xdc]
+Parsing XDC File [C:/Users/aptay/Downloads/hdl-hdl_2016_r2/projects/common/zed/zed_system_constr.xdc]
+Finished Parsing XDC File [C:/Users/aptay/Downloads/hdl-hdl_2016_r2/projects/common/zed/zed_system_constr.xdc]
+Sourcing Tcl File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_ad9467_dma_0/bd/bd.tcl]
+Finished Sourcing Tcl File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_ad9467_dma_0/bd/bd.tcl]
+Parsing XDC File [C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/.Xil/Vivado-1680-DESKTOP-HQKVQ13/dcp/system_top.xdc]
+Finished Parsing XDC File [C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/.Xil/Vivado-1680-DESKTOP-HQKVQ13/dcp/system_top.xdc]
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9467/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9467/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_ad9467_0/axi_ad9467_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9467/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_ad9467_0/axi_ad9467_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9467/inst'
+Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_ad9467_dma_0/system_axi_ad9467_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9467_dma/inst'
+Finished Parsing XDC File [c:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.srcs/sources_1/bd/system/ip/system_axi_ad9467_dma_0/system_axi_ad9467_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9467_dma/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 39 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+link_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1023.379 ; gain = 809.543
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.872 . Memory (MB): peak = 1023.379 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 17ab69f5a
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 6 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 169d5dcea
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 115 cells.
+Phase 2 Constant propagation | Checksum: 8f260e7f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 1085 unconnected nets.
+INFO: [Opt 31-11] Eliminated 385 unconnected cells.
+Phase 3 Sweep | Checksum: 1f8608ea5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 21eb0cd97
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Phase 5 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 5 Constant propagation | Checksum: 21eb0cd97
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Phase 6 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 6 Sweep | Checksum: 21eb0cd97
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1023.379 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 21eb0cd97
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1023.379 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 20f2b41b5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 20f2b41b5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1206.313 ; gain = 182.934
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1206.313 ; gain = 182.934
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_spi/spi_enable_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_ad9467/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_ad9467_dma/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_spi/spi_enable_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467_dma/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_spi/spi_enable_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467_dma/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1011eb8f5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 18d54d7bf
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 18d54d7bf
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 18d54d7bf
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 11cd0f802
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 11cd0f802
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: c46679ef
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 135f843f8
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 6f81b7a3
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 13f526d9e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:24 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 850d30e1
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 12548c1d0
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1c19da166
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 18305f145
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: a8b82cb4
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:31 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: a8b82cb4
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:32 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.793. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1caa55b5a
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:15 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1caa55b5a
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:15 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1caa55b5a
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:16 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1caa55b5a
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:16 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 185f085d3
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:16 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 185f085d3
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:16 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Ending Placer Task | Checksum: 89a73a92
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:16 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:20 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1206.313 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1206.313 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: b0b69806
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-357.446 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 2 Fanout Optimization | Checksum: b0b69806
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 24 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[0]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[1].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[1]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[147].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[147]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[71].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[71]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/d_count_hold[10].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/d_count_hold_reg[10]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[190].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[190]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/d_count_hold[28].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/d_count_hold_reg[28]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[139]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[138].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[138]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[151].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[151]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[90].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[90]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_hl_width_s__0[14].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[190]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][66].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[90]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][92].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[147]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][47].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[71]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][96].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[151]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[139]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][83].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[138]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/data7.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[1]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/Q[10].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/up_d_count_reg[10]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/Q[28].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_clock_mon/up_d_count_reg[28]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]
+INFO: [Physopt 32-661] Optimized 11 nets.  Re-placed 11 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.617 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 3 Placement Based Optimization | Checksum: 11ab747e0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 4 Rewire | Checksum: 11ab747e0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 2 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[1]. Replicated 1 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 1 new instance.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.614 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 5 Critical Cell Optimization | Checksum: 18f37d4bf
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 6 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 6 Fanout Optimization | Checksum: 18f37d4bf
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 7 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 14 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[0]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[1]_repN.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[1]_replica
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[70].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[70]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[190].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[190]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[147].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[147]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[139]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_hl_width_s__0[14].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[190]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][92].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[147]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[139]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][46].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[70]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/data7.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[1]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]
+INFO: [Physopt 32-661] Optimized 4 nets.  Re-placed 4 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.350 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 7 Placement Based Optimization | Checksum: ef81bb26
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 8 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 8 Rewire | Checksum: ef81bb26
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 9 Critical Cell Optimization
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+Phase 9 Critical Cell Optimization | Checksum: ef81bb26
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 10 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 10 Fanout Optimization | Checksum: ef81bb26
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 11 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 12 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[0]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[1]_repN.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[1]_replica
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[190].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[190]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[70].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[70]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[139]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_hl_width_s__0[14].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[190]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][46].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[70]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[139]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/data7.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[1]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 2 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.180 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 11 Placement Based Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 12 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 12 Rewire | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 13 Critical Cell Optimization
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+Phase 13 Critical Cell Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 14 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 14 DSP Register Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 15 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 15 BRAM Register Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 16 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 16 Shift Register Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 17 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 17 DSP Register Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 18 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 18 BRAM Register Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 19 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 19 Shift Register Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 20 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 2 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-608] Optimized 0 net.  Swapped 0 pin.
+Phase 20 Critical Pin Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 21 Very High Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 21 Very High Fanout Optimization | Checksum: 110be83f4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 22 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 10 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[0]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[1]_repN.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[1]_replica
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1_n_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[1]_i_1
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[190].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[190]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[139]
+INFO: [Physopt 32-663] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_hl_width_s__0[14].  Re-placed instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[190]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[139]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/data7.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[1]
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]_0.  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 2 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.128 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Phase 22 Placement Based Optimization | Checksum: 1af35bc67
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 23 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.128 |
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[0]
+INFO: [Physopt 32-572] Net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[139]
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[139]
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data_reg[0]
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/d_xfer_data[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_status/up_data_status[0]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[139]
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/hdmi_16_data_d_reg[15][84]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139].  Did not re-place instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data_reg[139]
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/up_xfer_data[139]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.793 | TNS=-356.128 |
+Phase 23 Critical Path Optimization | Checksum: d887288c
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.313 ; gain = 0.000
+
+Phase 24 BRAM Enable Optimization
+Phase 24 BRAM Enable Optimization | Checksum: d887288c
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-1.793 | TNS=-356.128 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Placement Based    |          0.000  |          1.315  |            0  |              0  |                    19  |           0  |           4  |  00:00:03  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Critical Cell      |          0.000  |          0.009  |            1  |              0  |                     1  |           0  |           3  |  00:00:00  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  BRAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Very High Fanout   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Pin       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:01  |
+|  Total              |          0.000  |          1.324  |            1  |              0  |                    20  |           0  |          22  |  00:00:04  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: 1d3bee028
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+181 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1206.313 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 1206.313 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_physopt.dcp' has been generated.
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c2a9774e ConstDB: 0 ShapeSum: 7819e917 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: df1a6a2a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1229.508 ; gain = 23.195
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: df1a6a2a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1229.508 ; gain = 23.195
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: df1a6a2a
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1229.508 ; gain = 23.195
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: df1a6a2a
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:32 . Memory (MB): peak = 1229.508 ; gain = 23.195
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 139bed677
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:37 . Memory (MB): peak = 1241.758 ; gain = 35.445
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.833 | TNS=-367.497| WHS=-0.730 | THS=-338.381|
+
+Phase 2 Router Initialization | Checksum: 1b424ce3f
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:39 . Memory (MB): peak = 1264.531 ; gain = 58.219
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 602e8ff2
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1085
+ Number of Nodes with overlaps = 121
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1e373627b
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:43 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.303 | TNS=-752.689| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 1c4b73cf8
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:43 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 214a97854
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:44 . Memory (MB): peak = 1279.613 ; gain = 73.301
+Phase 4.1.2 GlobIterForTiming | Checksum: 187a55e3e
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:02:10 . Memory (MB): peak = 1279.613 ; gain = 73.301
+Phase 4.1 Global Iteration 0 | Checksum: 187a55e3e
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:02:10 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1147b8588
+
+Time (s): cpu = 00:09:05 ; elapsed = 00:08:38 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.305 | TNS=-733.710| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 23dfa90b0
+
+Time (s): cpu = 00:09:05 ; elapsed = 00:08:38 . Memory (MB): peak = 1279.613 ; gain = 73.301
+Phase 4 Rip-up And Reroute | Checksum: 23dfa90b0
+
+Time (s): cpu = 00:09:05 ; elapsed = 00:08:38 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16eef2326
+
+Time (s): cpu = 00:09:08 ; elapsed = 00:08:40 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.303 | TNS=-752.689| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 16eef2326
+
+Time (s): cpu = 00:09:08 ; elapsed = 00:08:40 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 16eef2326
+
+Time (s): cpu = 00:09:08 ; elapsed = 00:08:40 . Memory (MB): peak = 1279.613 ; gain = 73.301
+Phase 5 Delay and Skew Optimization | Checksum: 16eef2326
+
+Time (s): cpu = 00:09:08 ; elapsed = 00:08:40 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 25a8533bc
+
+Time (s): cpu = 00:09:09 ; elapsed = 00:08:41 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.303 | TNS=-752.689| WHS=-0.016 | THS=-0.016 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1e3f11aee
+
+Time (s): cpu = 00:09:09 ; elapsed = 00:08:41 . Memory (MB): peak = 1279.613 ; gain = 73.301
+WARNING: [Route 35-468] The router encountered 241 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[233]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[231]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[211]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[209]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[210]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_core_rst_reg/ad_rst_sync_m1_reg/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[221]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[222]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[223]/D
+	i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_xfer_cntrl/d_data_cntrl_reg[225]/D
+	.. and 231 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 15d5bc783
+
+Time (s): cpu = 00:09:10 ; elapsed = 00:08:41 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 22708ca90
+
+Time (s): cpu = 00:09:12 ; elapsed = 00:08:42 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.303 | TNS=-752.689| WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 22708ca90
+
+Time (s): cpu = 00:09:12 ; elapsed = 00:08:43 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.54385 %
+  Global Horizontal Routing Utilization  = 3.21763 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 51.3514%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+Phase 8 Route finalize | Checksum: 22708ca90
+
+Time (s): cpu = 00:09:12 ; elapsed = 00:08:43 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 22708ca90
+
+Time (s): cpu = 00:09:12 ; elapsed = 00:08:43 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1b5d23444
+
+Time (s): cpu = 00:09:13 ; elapsed = 00:08:44 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1279.613 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.300. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 10f9de429
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1279.613 ; gain = 0.000
+Phase 11 Incr Placement Change | Checksum: 1b5d23444
+
+Time (s): cpu = 00:09:37 ; elapsed = 00:09:03 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 1b619cdbd
+
+Time (s): cpu = 00:09:39 ; elapsed = 00:09:05 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: 1e52885a
+
+Time (s): cpu = 00:09:40 ; elapsed = 00:09:06 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: 1e52885a
+
+Time (s): cpu = 00:09:40 ; elapsed = 00:09:06 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: 1e52885a
+
+Time (s): cpu = 00:09:40 ; elapsed = 00:09:06 . Memory (MB): peak = 1279.613 ; gain = 73.301
+
+Phase 13.4 Timing Verification
+
+Phase 13.4.1 Update Timing
+Phase 13.4.1 Update Timing | Checksum: 1df684293
+
+Time (s): cpu = 00:09:47 ; elapsed = 00:09:10 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.300 | TNS=-752.029| WHS=0.054  | THS=0.000  |
+
+Phase 13.4 Timing Verification | Checksum: 1df684293
+
+Time (s): cpu = 00:09:47 ; elapsed = 00:09:10 . Memory (MB): peak = 1279.613 ; gain = 73.301
+ Number of Nodes with overlaps = 0
+
+Phase 13.5 Update Timing
+Phase 13.5 Update Timing | Checksum: 21cb69e11
+
+Time (s): cpu = 00:09:55 ; elapsed = 00:09:14 . Memory (MB): peak = 1279.613 ; gain = 73.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.304 | TNS=-752.790| WHS=-0.730 | THS=-337.398|
+
+Phase 13 Router Initialization | Checksum: 25114f33d
+
+Time (s): cpu = 00:09:59 ; elapsed = 00:09:17 . Memory (MB): peak = 1285.188 ; gain = 78.875
+
+Phase 14 Initial Routing
+Phase 14 Initial Routing | Checksum: 1af1d3f76
+
+Time (s): cpu = 00:10:00 ; elapsed = 00:09:17 . Memory (MB): peak = 1285.188 ; gain = 78.875
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+ Number of Nodes with overlaps = 45
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+
+Phase 15.1.1 Update Timing
+Phase 15.1.1 Update Timing | Checksum: 119c8be74
+
+Time (s): cpu = 00:14:04 ; elapsed = 00:13:08 . Memory (MB): peak = 1312.391 ; gain = 106.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.454 | TNS=-742.637| WHS=N/A    | THS=N/A    |
+
+
+Phase 15.1.2 GlobIterForTiming
+
+Phase 15.1.2.1 Update Timing
+Phase 15.1.2.1 Update Timing | Checksum: 141f44042
+
+Time (s): cpu = 00:14:05 ; elapsed = 00:13:08 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 15.1.2.2 Fast Budgeting
+Phase 15.1.2.2 Fast Budgeting | Checksum: 105c9cc78
+
+Time (s): cpu = 00:14:06 ; elapsed = 00:13:09 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 15.1.2 GlobIterForTiming | Checksum: 165dfac19
+
+Time (s): cpu = 00:14:34 ; elapsed = 00:13:37 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 15.1 Global Iteration 0 | Checksum: 165dfac19
+
+Time (s): cpu = 00:14:34 ; elapsed = 00:13:37 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 0
+
+Phase 15.2.1 Update Timing
+Phase 15.2.1 Update Timing | Checksum: 1d172b992
+
+Time (s): cpu = 00:19:09 ; elapsed = 00:18:11 . Memory (MB): peak = 1312.391 ; gain = 106.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.352 | TNS=-734.737| WHS=N/A    | THS=N/A    |
+
+
+Phase 15.2.2 GlobIterForTiming
+
+Phase 15.2.2.1 Update Timing
+Phase 15.2.2.1 Update Timing | Checksum: 14e17d2c7
+
+Time (s): cpu = 00:19:10 ; elapsed = 00:18:12 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 15.2.2.2 Fast Budgeting
+Phase 15.2.2.2 Fast Budgeting | Checksum: 193fdca94
+
+Time (s): cpu = 00:19:10 ; elapsed = 00:18:12 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 15.2.2 GlobIterForTiming | Checksum: 7920811e
+
+Time (s): cpu = 00:19:38 ; elapsed = 00:18:40 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 15.2 Global Iteration 1 | Checksum: 7920811e
+
+Time (s): cpu = 00:19:38 ; elapsed = 00:18:40 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 15.3 Global Iteration 2
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 5
+Phase 15.3 Global Iteration 2 | Checksum: fee8f0d6
+
+Time (s): cpu = 00:24:34 ; elapsed = 00:23:37 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 15 Rip-up And Reroute | Checksum: fee8f0d6
+
+Time (s): cpu = 00:24:34 ; elapsed = 00:23:37 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 Delay CleanUp
+
+Phase 16.1.1 Update Timing
+Phase 16.1.1 Update Timing | Checksum: 12846ea31
+
+Time (s): cpu = 00:24:37 ; elapsed = 00:23:38 . Memory (MB): peak = 1312.391 ; gain = 106.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.352 | TNS=-734.737| WHS=N/A    | THS=N/A    |
+
+Phase 16.1 Delay CleanUp | Checksum: 12846ea31
+
+Time (s): cpu = 00:24:37 ; elapsed = 00:23:38 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 12846ea31
+
+Time (s): cpu = 00:24:37 ; elapsed = 00:23:38 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 16 Delay and Skew Optimization | Checksum: 12846ea31
+
+Time (s): cpu = 00:24:37 ; elapsed = 00:23:38 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: 17716cf82
+
+Time (s): cpu = 00:24:38 ; elapsed = 00:23:39 . Memory (MB): peak = 1312.391 ; gain = 106.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.352 | TNS=-734.737| WHS=0.052  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 13fe745ff
+
+Time (s): cpu = 00:24:38 ; elapsed = 00:23:39 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Phase 17 Post Hold Fix | Checksum: 13fe745ff
+
+Time (s): cpu = 00:24:38 ; elapsed = 00:23:39 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 1910b937f
+
+Time (s): cpu = 00:24:41 ; elapsed = 00:23:41 . Memory (MB): peak = 1312.391 ; gain = 106.078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.352 | TNS=-734.737| WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 1910b937f
+
+Time (s): cpu = 00:24:41 ; elapsed = 00:23:41 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Phase 19 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-3.300 | TNS=-752.029| WHS=0.054  | THS=0.000  |
+
+CRITICAL WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Phase 19 Post Router Timing | Checksum: 164372ed1
+
+Time (s): cpu = 00:24:48 ; elapsed = 00:23:44 . Memory (MB): peak = 1312.391 ; gain = 106.078
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:24:48 ; elapsed = 00:23:44 . Memory (MB): peak = 1312.391 ; gain = 106.078
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+209 Infos, 23 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:24:53 ; elapsed = 00:23:47 . Memory (MB): peak = 1312.391 ; gain = 106.078
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1312.391 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1312.391 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/hdl_projects/ad9467_fmc_zed/hw/vivado/ad9467_fmc_zed.runs/impl_1/system_top_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1312.391 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Command: report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb -rpx system_top_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+219 Infos, 24 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+Command: write_bitstream -force -no_partial_bitfile system_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC 23-20] Rule violation (REQP-125) connects_CLKINSEL_both_active - i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm: The MMCME2_ADV has an active CLKINSEL, but the CLKIN1 and CLKIN2 pins are not both active.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_spi/spi_enable_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_ad9467/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_ad9467_dma/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg has an input control pin i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/ram_reg/ENARDEN (net: i_system_wrapper/system_i/axi_ad9467_dma/inst/i_request_arb/i_fifo/_m_axis_ready) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_spi/spi_enable_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467_dma/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_spi/spi_enable_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_ad9467_dma/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_wready_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (RTSTAT-10) No routable loads - 12 net(s) have no routable loads. The problem bus(es) and/or net(s) are i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[1], i_system_wrapper/system_i/axi_hdmi_dma/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/fg_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, i_system_wrapper/system_i/axi_hp0_interconnect/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2].
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 23 Warnings, 9 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 18959840 bits.
+Writing bitstream ./system_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+234 Infos, 47 Warnings, 2 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 1569.063 ; gain = 256.672
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 16:33:51 2017...
