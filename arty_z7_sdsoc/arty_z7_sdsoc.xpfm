@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="arty_z7_sdsoc"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+  <sdx:description>Basic platform targeting the ZedBoard, which includes 512 MB of DDR3, 256 Mb Quad-SPI Flash and 4 GB SD card. More information at http://www.zedboard.org</sdx:description>
+
+    <!-- Support multiple DSAs for multi-FPGA platforms -->
+  <sdx:hardwarePlatforms>
+    <sdx:hardwarePlatform sdx:path="hw" sdx:name="arty_z7_sdsoc.hpfm"/>
+  </sdx:hardwarePlatforms>
+
+  <sdx:softwarePlatforms>
+    <sdx:softwarePlatform sdx:path="sw" sdx:name="arty_z7_sdsoc.spfm"/>
+  </sdx:softwarePlatforms>
+
+</sdx:platform>

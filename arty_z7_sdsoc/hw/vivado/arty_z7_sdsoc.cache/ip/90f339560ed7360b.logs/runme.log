@@ -1,0 +1,44 @@
+
+*** Running vivado
+    with args -log design_1_xlconcat_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xlconcat_0_0.tcl
+
+
+
+****** Vivado v2016.3_sdx (64-bit)
+  **** SW Build 1721784 on Tue Nov 29 22:12:44 MST 2016
+  **** IP Build 1720686 on Mon Nov 28 12:39:17 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Xilinx/SDx/2016.3/Vivado/scripts/init.tcl'
+176 Beta devices matching pattern found, 24 enabled.
+16 Beta devices matching pattern found, 0 enabled.
+Loaded SDSoC Platform Tcl Library
+source design_1_xlconcat_0_0.tcl -notrace
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 296.699 ; gain = 86.605
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconcat_0_0' [c:/hdl_projects/arty_z7_sdsoc/hw/vivado/arty_z7_sdsoc.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/hdl_projects/arty_z7_sdsoc/hw/vivado/arty_z7_sdsoc.srcs/sources_1/bd/design_1/ipshared/2e37/xlconcat.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (1#1) [c:/hdl_projects/arty_z7_sdsoc/hw/vivado/arty_z7_sdsoc.srcs/sources_1/bd/design_1/ipshared/2e37/xlconcat.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconcat_0_0' (2#1) [c:/hdl_projects/arty_z7_sdsoc/hw/vivado/arty_z7_sdsoc.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.vhd:66]
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 334.121 ; gain = 124.027
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 334.121 ; gain = 124.027
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 334.121 ; gain = 124.027
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 338.105 ; gain = 128.012
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 461.652 ; gain = 251.559
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 461.652 ; gain = 251.559
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 462.383 ; gain = 252.289
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 462.383 ; gain = 252.289
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 542.539 ; gain = 317.727
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 926.441 ; gain = 383.902
