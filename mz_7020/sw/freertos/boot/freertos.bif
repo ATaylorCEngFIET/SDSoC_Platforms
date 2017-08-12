@@ -1,0 +1,7 @@
+/* freertos */
+the_ROM_image:
+{
+  [bootloader]<freertos/boot/fsbl.elf>
+  <bitstream>
+  <elf>
+}

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Aug 11 16:57:41 2017
+# Process ID: 3636
+# Current directory: C:/hdl_projects/mz_7020/HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23508 C:\hdl_projects\mz_7020\HW\mz_7020.xpr
+# Log file: C:/hdl_projects/mz_7020/HW/vivado.log
+# Journal file: C:/hdl_projects/mz_7020/HW\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Xilinx/Vivado/2017.1/scripts/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Xilinx/Vivado/2017.1/scripts/init.tcl'
+281 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 262.328 ; gain = 42.031
+start_gui
+open_project C:/hdl_projects/mz_7020/HW/mz_7020.xpr
+INFO: [Project 1-313] Project file moved from 'C:/hdl_projects/mz_7020' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 873.055 ; gain = 29.305
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 11 16:58:46 2017...

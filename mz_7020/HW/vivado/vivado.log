@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Aug 11 20:14:08 2017
+# Process ID: 7604
+# Current directory: C:/hdl_projects/mz_7020/HW/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21380 C:\hdl_projects\mz_7020\HW\vivado\mz_7020.xpr
+# Log file: C:/hdl_projects/mz_7020/HW/vivado/vivado.log
+# Journal file: C:/hdl_projects/mz_7020/HW/vivado\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Xilinx/Vivado/2017.1/scripts/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Xilinx/Vivado/2017.1/scripts/init.tcl'
+281 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 261.266 ; gain = 41.234
+start_gui
+open_project C:/hdl_projects/mz_7020/HW/vivado/mz_7020.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.1/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"namespace eval ::xilinx.com_ip_aximm_1.0 { source -notrace {C:/Xilinx/Vivado/2017.1/data/rsb/busdef/AXIMM/busdef.tcl} }"
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"source -notrace {C:/Xilinx/Vivado/2017.1/data/rsb/busdef/clock_signal/busdef.tcl} "
+    (in namespace eval "::xilinx.com_ip_clock_signal_1.0" script line 1)
+    invoked from within
+"namespace eval ::xilinx.com_ip_clock_signal_1.0 { source -notrace {C:/Xilinx/Vivado/2017.1/data/rsb/busdef/clock_signal/busdef.tcl} }"
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_proc_sys_reset_0_0
+design_1_proc_sys_reset_0_1
+design_1_proc_sys_reset_0_2
+design_1_proc_sys_reset_0_3
+
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 11 20:14:56 2017...

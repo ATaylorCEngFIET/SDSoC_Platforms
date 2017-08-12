@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Aug 11 16:57:41 2017
+# Process ID: 3636
+# Current directory: C:/hdl_projects/mz_7020/HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23508 C:\hdl_projects\mz_7020\HW\mz_7020.xpr
+# Log file: C:/hdl_projects/mz_7020/HW/vivado.log
+# Journal file: C:/hdl_projects/mz_7020/HW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/hdl_projects/mz_7020/HW/mz_7020.xpr
+update_compile_order -fileset sources_1

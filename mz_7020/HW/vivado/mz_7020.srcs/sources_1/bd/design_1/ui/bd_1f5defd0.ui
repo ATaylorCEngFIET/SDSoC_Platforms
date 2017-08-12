@@ -1,0 +1,28 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -160 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -140 -defaultsOSRD
+preplace inst ps7 -pg 1 -lvl 2 -y -20 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -y -50 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -y -20 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst proc_sys_reset_2 -pg 1 -lvl 3 -y 290 -defaultsOSRD
+preplace inst proc_sys_reset_3 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 2 980J -160 N
+preplace netloc ps7_FCLK_RESET1_N 1 2 1 960
+preplace netloc ps7_FCLK_RESET2_N 1 2 1 940
+preplace netloc ps7_FCLK_CLK0 1 2 1 950
+preplace netloc ps7_FCLK_CLK1 1 2 1 990
+preplace netloc ps7_FCLK_RESET3_N 1 2 1 930
+preplace netloc ps7_FCLK_CLK2 1 2 1 970
+preplace netloc xlconcat_0_dout 1 1 1 N
+preplace netloc processing_system7_0_FIXED_IO 1 2 2 980J -140 N
+preplace netloc ps7_FCLK_CLK3 1 2 1 950
+preplace netloc ps7_FCLK_RESET0_N 1 2 1 980
+levelinfo -pg 1 -80 450 740 1330 1520 -top -290 -bot 550
+",
+}
+{
+   da_ps7_cnt: "1",
+}
